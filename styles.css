@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height:100%;
+}
+ body{background: #FFF;}
+
+/*Parte superiore con firma*/
+.firma{
+  color:#6d6875;   /*tonalità di grigio*/
+  margin-top: 10px;
+  text-align: center;
+  width:100%;
+  height:200px;
+}
+.firma-breve{
+  font-family: 'Rock Salt', cursive;
+  font-size: 50px;
+}
+
+.firma-lunga{
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+}
+
+.professione{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+/*Barra di navigazione*/
+.menu-contenitore{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background: #b5838d;   /*tonalità di rosa scuro*/
+  padding:15px 0;
+  border-radius: 10px;
+}
+
+.menu{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.heart{color:#FFF;}
+
+a{
+  color:#FFF;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: auto;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+a:hover{
+  background: #e5989b; /*tonalità di rosa chiaro*/
+}
+a:active{
+  background: #ffb4a2;  /*altra tonalità di rosa*/
+}
+
+/* Titolo Testo e Foto generico*/
+main{
+  width:100%;
+  height:70%;
+  background-size: auto;
+  -o-background-size: auto;
+  -moz-background-size: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.Titoloetesto{
+  width: 50%;
+  height:100%;
+  position:relative;
+}
+h1{
+  margin-top: 50px;
+  color:#b5838d;
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  text-align: left;
+}
+.barra{
+  width: 130px;
+  height:12px;
+  border-radius: 5px;
+  background-color: #6d6875;
+  margin-top:10px;
+}
+p{
+  font-family:'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 50px;
+  color:#495057;      /*nero/grigio*/
+}
+.capacità{
+ font-family:'Montserrat', sans-serif;
+ font-size: 20px;
+ text-align: left;
+ margin-top: 10px;
+ color:#495057;      /*nero/grigio*/
+}
+
+.Foto{
+  position: absolute;
+  right:10%;
+  top:50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.fotohome{    /*foto laterale*/
+  width:auto;
+  height:600px;
+}
+
+/*Footer*/
+.partefinale{
+  text-align: center;
+  display: block;
+}
+
+.icone{
+  margin-top: 50px;
+  display: inline-block;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-top:200px;
+}
+
+.testo{
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #b5838d;   /*tonalità di rosa scuro*/
+}
+
+/* Pagina Skills */
+img{           /*icone*/
+  margin-right: 12px;
+  display:inline-block;
+}
+
+.fotoskills{     /*foto laterale*/
+  width:auto;
+  height:500px;
+}
+
+.Foto2{             /*foto laterale*/
+  position: absolute;
+  right:10%;
+  top:165%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Curiosità Page*/
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.Foto3{          /*foto laterale*/
+  position: absolute;
+  right:10%;
+  top:85%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Pagina Contatti */
+input, .messaggio, .bottoneinvia{
+  display: block;
+  margin-top: 20px;
+  width:400px;
+  height:30px;
+  border: 3px solid #b5838d;   /*tonalità di rosa scuro*/
+  border-radius: 10px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top: 50px;
+}
+.social{
+  display: inline-block;
+  margin-top: 50px;
+}
+.link {
+  width:auto;
+  height:40px;
+}
+.sito:hover{
+  background: none;
+}
+.sito:active{
+  background: none;
+}
+.messaggio{
+  width:400px;
+  height:200px;
+}
+
+.bottoneinvia:hover{background: #6d6875;}  /*tonalità di grigio*/
+.bottoneinvia:active{background: #FFF; }
+
+
+
+/*Responsive*/
+
+@media screen and (max-width:360px){
+  img{
+    height:50px;
+    width:auto;
+  }
+}
+
+@media screen and (max-width:768px){
+  /*Menu*/
+  .menu-contenitore{margin-top: 70px;}
+
+  a{margin-right: 10px;}
+
+  /*Corpo del sito*/
+  main{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .Titoloetesto{
+    width: 100%;
+    height:100%;
+  }
+
+  h1{text-align: left;}
+
+  p, .capacità{text-align: left;}
+
+  .Foto{display: none;}
+
+  .Foto2{display: none;}
+
+  .Foto3{display: none;}
+
+  .icone{margin-right:10px;}
+
+  .social{margin-right:10px;}
+
+  input{
+    width:200px;
+    height:30px;
+  }
+
+  .link {
+    width:auto;
+    height:30px;
+  }
+  .testo{font-size: 10px;}
+
+  .messaggio{
+    width:300px;
+    height:200px;
+  }
+  .bottoneinvia{
+    width:300px;
+  }
+}
+
+@media screen and (max-width:1024px){
+  /*Foto*/
+  .Foto{
+    position: absolute;
+    right:0;
+    top:30%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Foto2{
+    position: absolute;
+    right:0;
+    top:100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Foto3{
+    position: absolute;
+    right:0;
+    top:30%;
+    max-width: 100%;
+    height: auto;
+  }
+  .fotocontact{
+    width:auto;
+    height:600px;
+  }
+}
+
+@media screen and (max-width:1024px) and (max-height:768px){
+  /*Foto*/
+  .Foto{
+    position: absolute;
+    right:0;
+    top:50%;
+    max-width: 100%;
+    height: auto;
+  }
+  .Foto2{
+    position: absolute;
+    right:0;
+    top:160%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Foto3{
+    position: absolute;
+    right:0;
+    top:60%;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .fotocontact{
+    width:auto;
+    height:600px;
+  }
+}
